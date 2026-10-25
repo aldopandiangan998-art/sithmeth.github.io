@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Zelda';
-    src: url(The\ Wild\ Breath\ of\ Zelda.otf) format(opentype);
+    src: url('The Wild Breath of Zelda.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
@@ -12,3 +12,65 @@
 .font-times{
     font-family: 'Times New Roman', Times, serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Simple Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.animate-float {
+    animation: float 4.5s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-fade-1 {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.1s;
+}
+
+.hero-fade-2 {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.25s;
+}
+
+.hero-fade-3 {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.4s;
+}
+
+.hero-fade-4 {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.55s;
+}
+
+/* Scroll reveal for sections */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
