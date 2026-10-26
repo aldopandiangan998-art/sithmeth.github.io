@@ -329,25 +329,68 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full h-[500px] md:h-[350px] lg:h-[600px] mt-100 
-        bg-[url('images/footer/bg-footer.png')] bg-cover bg-center px-4 py-8 lg:px-[90px] 
-        lg:py-[88px] lg:border-t-[20px] lg:border-t-[#7A3D21] flex justify-center items-center">
+    <footer class="w-full mt-100
+        bg-[url('images/footer/bg-footer.png')] bg-cover bg-center
+        lg:border-t-[20px] lg:border-t-[#7A3D21]
+        flex justify-center items-center
+        py-6 sm:py-8 lg:py-[60px] px-4 lg:px-[90px]">
 
-        <!-- FRAME Parent -->
-        <div class="flex flex-col w-full h-[440px] md:w-170 lg:w-[1000px] md:h-full lg:h-full 
-            bg-[url('images/footer/frame-footer-mobile.png')]
-            lg:bg-[url('images/footer/frame-footer-desktop.png')]
-            bg-center bg-contain bg-no-repeat px-6 lg:py-10 lg:px-[20px] items-center justify-center">
-            <!-- NAVBAR -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem]" href="#hero">Home</a>
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem]" href="#aboutme">About Me</a>
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem]" href="#myskills">My Skills</a>
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem]" href="#experience">My Experience</a>
+        <!-- FRAME Parent — aspect-ratio terkunci sesuai dimensi asli gambar -->
+        <div class="relative w-full
+            max-w-[280px] sm:max-w-[380px] md:max-w-[520px] lg:max-w-[900px]">
+
+            <!-- Frame Mobile (1398×2069 → aspect 1398/2069) tampil di < lg -->
+            <div class="block lg:hidden w-full" style="aspect-ratio: 1398 / 2069;">
+                <img src="images/footer/frame-footer-mobile.png"
+                     class="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+                     alt="">
+                <!-- Konten mobile di dalam frame -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 px-8">
+                    <div class="flex flex-col items-center justify-center gap-1.5">
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            leading-snug whitespace-nowrap" href="#hero">Home</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            leading-snug whitespace-nowrap" href="#aboutme">About Me</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            leading-snug whitespace-nowrap" href="#myskills">My Skills</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            leading-snug whitespace-nowrap" href="#experience">My Experience</a>
+                    </div>
+                    <p class="font-times font-bold text-[#F9DCB4] text-center
+                        text-[2.8vw] min-[380px]:text-[2.5vw] sm:text-[1.8vw]">
+                        &copy; SIMETRI HMSI ITS
+                    </p>
+                </div>
             </div>
 
-            <!-- Copyright -->
-            <p class="font-times font-bold text-[#F9DCB4] text-[15px] lg:text-[20px] mt-4">&copy; SIMETRI HMSI ITS</p>
+            <!-- Frame Desktop (5098×1814 → aspect 5098/1814) tampil di lg+ -->
+            <div class="hidden lg:block w-full" style="aspect-ratio: 5098 / 1814;">
+                <img src="images/footer/frame-footer-desktop.png"
+                     class="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+                     alt="">
+                <!-- Konten desktop di dalam frame -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 px-20">
+                    <div class="flex flex-row items-center justify-center gap-8 xl:gap-12">
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#hero">Home</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#aboutme">About Me</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#myskills">My Skills</a>
+                        <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
+                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#experience">My Experience</a>
+                    </div>
+                    <p class="font-times font-bold text-[#F9DCB4] text-center
+                        text-[1vw] xl:text-[1.1rem]">
+                        &copy; SIMETRI HMSI ITS
+                    </p>
+                </div>
+            </div>
+
         </div>
     </footer>
 </body>
