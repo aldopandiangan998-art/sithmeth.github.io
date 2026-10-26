@@ -210,61 +210,114 @@
         </div>
 
         <!-- Section 3 - My Skills -->
-        <section id="myskills" class="reveal flex justify-center mt-60">
-            <div class="flex flex-col text-center gap-4">
-                <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
+        <section id="myskills" class="reveal flex justify-center mt-60 px-4 sm:px-6">
+            <div class="flex flex-col text-center gap-4 w-full max-w-[340px] sm:max-w-[480px] md:max-w-[560px] lg:max-w-[800px]">
+                <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white
+                    [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21]
+                    text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
                     MY SKILLS
                 </h1>
 
-                <div class="relative">
-                    <!-- Decorative Hanging Iron Studs -->
-                    <div class="absolute -top-3.5 left-12 md:left-20 flex flex-col items-center pointer-events-none z-20">
+                <!-- ══ MOBILE PAPAN (< md) — 342×359 ══ -->
+                <div class="relative block md:hidden w-full">
+                    <!-- Studs dekoratif di pojok papan -->
+                    <div class="absolute top-0 left-[12%] flex flex-col items-center pointer-events-none z-20">
                         <div class="w-1.5 h-4 bg-gradient-to-b from-[#7A3D21] to-[#3B1A0E] shadow-sm"></div>
                         <div class="w-3.5 h-3.5 rounded-full bg-[#3B1A0E] border-2 border-[#B89151] shadow-inner"></div>
                     </div>
-                    <div class="absolute -top-3.5 right-12 md:right-20 flex flex-col items-center pointer-events-none z-20">
+                    <div class="absolute top-0 right-[12%] flex flex-col items-center pointer-events-none z-20">
                         <div class="w-1.5 h-4 bg-gradient-to-b from-[#7A3D21] to-[#3B1A0E] shadow-sm"></div>
                         <div class="w-3.5 h-3.5 rounded-full bg-[#3B1A0E] border-2 border-[#B89151] shadow-inner"></div>
                     </div>
 
-                    <!-- Laptop dan tablet -->
-                    <img src="images/My Skills/wood plank.svg" alt="Papan kayu"
-                        class="hidden md:block lg:w-[769.08px] md:w-[500.17px] filter drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
-                    <!-- Mobile -->
                     <img src="images/My Skills/wood plank - mobile.svg" alt="Papan kayu"
-                        class="block md:hidden w-[25rem] filter drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
+                        class="w-full h-auto block filter drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
 
-                    <div class="absolute inset-0 flex flex-col text-left px-15 pt-10 gap-1 text-[#592918]">
-                        <h1 class="text-[2.75rem] md:text-[2.5rem] lg:text-[3.75rem]">Aku tertarik dengan mata kuliah yang ada di sisfor</h1>
-                        
-                        <!-- Stylized Fantasy Skills List -->
-                        <ul class="font-times flex flex-col gap-2 ml-4 md:ml-6 text-[1rem] md:text-[1.35rem] lg:text-[1.75rem]">
-                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
-                                <span class="w-2.5 h-2.5 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all shrink-0"></span>
+                    <!-- Konten di atas papan mobile -->
+                    <div class="absolute inset-0 flex flex-col text-left text-[#592918]
+                        px-[10%] pt-[8%] pb-[22%] gap-[3%]">
+                        <h2 class="font-zelda text-[4.5vw] sm:text-[3.5vw] leading-tight">
+                            Aku tertarik dengan mata kuliah yang ada di sisfor
+                        </h2>
+                        <ul class="font-times flex flex-col gap-[2%] ml-[4%] text-[3.5vw] sm:text-[2.8vw]">
+                            <li class="flex items-center gap-2 transition-transform duration-200 hover:translate-x-1 cursor-default group">
+                                <span class="w-2 h-2 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_6px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
                                 <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Matematika</span>
                             </li>
-                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
-                                <span class="w-2.5 h-2.5 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all shrink-0"></span>
+                            <li class="flex items-center gap-2 transition-transform duration-200 hover:translate-x-1 cursor-default group">
+                                <span class="w-2 h-2 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_6px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
                                 <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Fisika</span>
                             </li>
-                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
-                                <span class="w-2.5 h-2.5 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all shrink-0"></span>
+                            <li class="flex items-center gap-2 transition-transform duration-200 hover:translate-x-1 cursor-default group">
+                                <span class="w-2 h-2 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_6px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
                                 <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Kimia</span>
                             </li>
                         </ul>
-
-                        <div class="absolute inset-x-0 bottom-[40px] md:bottom-[25px] lg:bottom-[50px] flex justify-center items-center pointer-events-none">
+                        <!-- Tombol -->
+                        <div class="absolute inset-x-0 bottom-[8%] flex justify-center items-center pointer-events-none">
                             <a href="#experience"
-                               class="pointer-events-auto px-8 pt-[8px] pb-[6px] rounded-[8px]
+                               class="pointer-events-auto px-[5%] pt-[6px] pb-[4px] rounded-[8px]
                                       bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)]
-                                      border-[1px] border-[#F3B641] outline-[1px] outline-[#592918]
-                                      drop-shadow-[0_5px_0_#592918] hover:brightness-90 active:translate-y-1 active:drop-shadow-[0_1px_0_#592918]
+                                      border border-[#F3B641] outline outline-1 outline-[#592918]
+                                      drop-shadow-[0_4px_0_#592918] hover:brightness-90
+                                      active:translate-y-0.5 active:drop-shadow-[0_1px_0_#592918]
                                       transition-all duration-100 cursor-pointer select-none">
-                                <p class="text-white text-[2rem] md:text-[1.5rem] lg:text-[2.5rem] leading-none select-none">My Experience</p>
+                                <p class="text-white text-[4vw] sm:text-[3vw] leading-none select-none">My Experience</p>
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- ══ DESKTOP PAPAN (md+) — 780×526 ══ -->
+                <div class="relative hidden md:block w-full">
+                    <!-- Studs dekoratif -->
+                    <div class="absolute top-0 left-[10%] flex flex-col items-center pointer-events-none z-20">
+                        <div class="w-1.5 h-4 bg-gradient-to-b from-[#7A3D21] to-[#3B1A0E] shadow-sm"></div>
+                        <div class="w-3.5 h-3.5 rounded-full bg-[#3B1A0E] border-2 border-[#B89151] shadow-inner"></div>
+                    </div>
+                    <div class="absolute top-0 right-[10%] flex flex-col items-center pointer-events-none z-20">
+                        <div class="w-1.5 h-4 bg-gradient-to-b from-[#7A3D21] to-[#3B1A0E] shadow-sm"></div>
+                        <div class="w-3.5 h-3.5 rounded-full bg-[#3B1A0E] border-2 border-[#B89151] shadow-inner"></div>
+                    </div>
+
+                    <img src="images/My Skills/wood plank.svg" alt="Papan kayu"
+                        class="w-full h-auto block filter drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
+
+                    <!-- Konten di atas papan desktop -->
+                    <div class="absolute inset-0 flex flex-col text-left text-[#592918]
+                        px-[8%] pt-[7%] pb-[16%] gap-[3%]">
+                        <h2 class="font-zelda text-[2.8vw] md:text-[2.5vw] lg:text-[3vw] leading-tight">
+                            Aku tertarik dengan mata kuliah yang ada di sisfor
+                        </h2>
+                        <ul class="font-times flex flex-col gap-[2%] ml-[4%] text-[1.6vw] lg:text-[1.8vw]">
+                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
+                                <span class="w-2.5 h-2.5 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
+                                <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Matematika</span>
+                            </li>
+                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
+                                <span class="w-2.5 h-2.5 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
+                                <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Fisika</span>
+                            </li>
+                            <li class="flex items-center gap-3 transition-transform duration-200 hover:translate-x-2 cursor-default group">
+                                <span class="w-2.5 h-2.5 shrink-0 rotate-45 bg-[#F39241] border border-[#592918] shadow-[0_0_8px_#F3B641] group-hover:scale-125 group-hover:bg-[#F3B641] transition-all"></span>
+                                <span class="font-bold tracking-wide group-hover:text-[#3B1A0E] transition-colors">Kimia</span>
+                            </li>
+                        </ul>
+                        <!-- Tombol -->
+                        <div class="absolute inset-x-0 bottom-[8%] flex justify-center items-center pointer-events-none">
+                            <a href="#experience"
+                               class="pointer-events-auto px-[4%] pt-[8px] pb-[6px] rounded-[8px]
+                                      bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)]
+                                      border border-[#F3B641] outline outline-1 outline-[#592918]
+                                      drop-shadow-[0_5px_0_#592918] hover:brightness-90
+                                      active:translate-y-1 active:drop-shadow-[0_1px_0_#592918]
+                                      transition-all duration-100 cursor-pointer select-none">
+                                <p class="text-white text-[1.8vw] lg:text-[2.2vw] leading-none select-none">My Experience</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -335,57 +388,54 @@
         flex justify-center items-center
         py-6 sm:py-8 lg:py-[60px] px-4 lg:px-[90px]">
 
-        <!-- FRAME Parent — aspect-ratio terkunci sesuai dimensi asli gambar -->
-        <div class="relative w-full
-            max-w-[280px] sm:max-w-[380px] md:max-w-[520px] lg:max-w-[900px]">
+        <!-- FRAME wrapper — lebar responsif, tanpa fixed height -->
+        <div class="w-full max-w-[280px] sm:max-w-[380px] md:max-w-[520px] lg:max-w-[900px]">
 
-            <!-- Frame Mobile (1398×2069 → aspect 1398/2069) tampil di < lg -->
-            <div class="block lg:hidden w-full" style="aspect-ratio: 1398 / 2069;">
+            <!-- ══ MOBILE FRAME (< lg) ══
+                 relative + img h-auto → tinggi mengikuti aspect-ratio gambar asli secara alami
+                 absolute inset-0 → konten 100% sinkron dengan frame -->
+            <div class="relative block lg:hidden w-full">
                 <img src="images/footer/frame-footer-mobile.png"
-                     class="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+                     class="w-full h-auto block pointer-events-none select-none"
                      alt="">
-                <!-- Konten mobile di dalam frame -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 px-8">
-                    <div class="flex flex-col items-center justify-center gap-1.5">
+                <div class="absolute inset-0 flex flex-col items-center justify-center gap-[3%] px-[10%]">
+                    <div class="flex flex-col items-center justify-center gap-[2%]">
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            text-[3.5vw] sm:text-[2.5vw]
                             leading-snug whitespace-nowrap" href="#hero">Home</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            text-[3.5vw] sm:text-[2.5vw]
                             leading-snug whitespace-nowrap" href="#aboutme">About Me</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            text-[3.5vw] sm:text-[2.5vw]
                             leading-snug whitespace-nowrap" href="#myskills">My Skills</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[3.8vw] min-[280px]:text-[3.5vw] min-[380px]:text-[3vw] sm:text-[2.2vw]
+                            text-[3.5vw] sm:text-[2.5vw]
                             leading-snug whitespace-nowrap" href="#experience">My Experience</a>
                     </div>
-                    <p class="font-times font-bold text-[#F9DCB4] text-center
-                        text-[2.8vw] min-[380px]:text-[2.5vw] sm:text-[1.8vw]">
+                    <p class="font-times font-bold text-[#F9DCB4] text-center text-[2.5vw] sm:text-[1.8vw]">
                         &copy; SIMETRI HMSI ITS
                     </p>
                 </div>
             </div>
 
-            <!-- Frame Desktop (5098×1814 → aspect 5098/1814) tampil di lg+ -->
-            <div class="hidden lg:block w-full" style="aspect-ratio: 5098 / 1814;">
+            <!-- ══ DESKTOP FRAME (lg+) ══ -->
+            <div class="relative hidden lg:block w-full">
                 <img src="images/footer/frame-footer-desktop.png"
-                     class="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+                     class="w-full h-auto block pointer-events-none select-none"
                      alt="">
-                <!-- Konten desktop di dalam frame -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 px-20">
-                    <div class="flex flex-row items-center justify-center gap-8 xl:gap-12">
+                <div class="absolute inset-0 flex flex-col items-center justify-center gap-[4%] px-[8%]">
+                    <div class="flex flex-row items-center justify-center gap-[4%] xl:gap-[6%]">
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#hero">Home</a>
+                            text-[1.4vw] xl:text-[1.4rem] leading-snug whitespace-nowrap" href="#hero">Home</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#aboutme">About Me</a>
+                            text-[1.4vw] xl:text-[1.4rem] leading-snug whitespace-nowrap" href="#aboutme">About Me</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#myskills">My Skills</a>
+                            text-[1.4vw] xl:text-[1.4rem] leading-snug whitespace-nowrap" href="#myskills">My Skills</a>
                         <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors duration-200
-                            text-[1.4vw] xl:text-[1.5rem] leading-snug whitespace-nowrap" href="#experience">My Experience</a>
+                            text-[1.4vw] xl:text-[1.4rem] leading-snug whitespace-nowrap" href="#experience">My Experience</a>
                     </div>
-                    <p class="font-times font-bold text-[#F9DCB4] text-center
-                        text-[1vw] xl:text-[1.1rem]">
+                    <p class="font-times font-bold text-[#F9DCB4] text-center text-[1vw] xl:text-[1rem]">
                         &copy; SIMETRI HMSI ITS
                     </p>
                 </div>
